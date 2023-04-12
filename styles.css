@@ -1,0 +1,188 @@
+/* Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+*{
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 0 5%;
+}
+.heading{
+    padding: 1rem 5%;
+    background-color: #FFCB42;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.add-note{
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+    
+    background-color: #FFF4CF;
+    border: 1px solid #222;
+    color: #222;
+ 
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+.add-note i{
+    margin-right: 3px;
+    font-size: 1rem;
+}
+.add-note:hover{
+    border: 1px solid #FFCB42;
+    background-color: #fff;
+    color: #956c05;
+    transition: 0.5s ease;
+}
+
+#display{
+    background-color: #FFF4CF;
+    min-height: 100vh;
+    padding-top: 2.5%;
+}
+.main-area{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 509px){
+    .main-area{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 510px){
+    .main-area{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
+@media only screen and (min-width: 900px){
+    .main-area{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .main-area{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+.note{
+    margin: 10px 0;
+    min-height: 200px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.35);
+}
+.note-title{
+    padding-left: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+h4{
+    color: #333333;
+    font-weight: 300;
+}
+.note-title input{
+    padding: 5px 0;
+    outline: none;
+    border: none;
+    background-color: #FFCB42;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFCB42;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.operations{
+    padding: 5px 20px;
+    display: flex;
+}
+.title button{
+    padding: 7px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+}
+.title button:hover{
+    background-color: #fff;
+}
+
+.edit{
+    background-color: #17ab29;
+    color: #fff;
+}
+.edit:hover{
+    color: #17ab29;
+}
+.delete{
+    background-color: #EB1D36;
+    color: #fff;
+}
+.delete:hover{
+    color: #EB1D36;
+}
+
+.body{
+    padding: 10px 0;
+    margin: auto;
+    width: 90%;
+}
+.note-text{
+    width: 100%;
+    max-height: 150px;
+    outline: none;
+    border: none;
+    font-size: .9rem;
+    padding: 10px 20px;
+    line-height: 1.25;
+}
+.main{
+    padding: 10px 20px;
+}
+.textLike{
+    width: 100%;
+    max-height: 150px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    line-height: 1.25;
+}
+.hidden{
+    display: none;
+}
+
+
+
+/* yellow - #FFCB42
+   offwhite - #FFF4CF
+   red  - #EB1D36
+   green    - #3CCF4E
+*/
